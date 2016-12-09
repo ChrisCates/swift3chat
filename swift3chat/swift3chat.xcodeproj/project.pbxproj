@@ -14,6 +14,7 @@
 		595791061DFA280A00094D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595791041DFA280A00094D11 /* LaunchScreen.storyboard */; };
 		595791111DFA280A00094D11 /* swift3chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595791101DFA280A00094D11 /* swift3chatTests.swift */; };
 		5957911C1DFA280B00094D11 /* swift3chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957911B1DFA280B00094D11 /* swift3chatUITests.swift */; };
+		595791391DFA812200094D11 /* s3c.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 595791381DFA812200094D11 /* s3c.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		595791171DFA280B00094D11 /* swift3chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift3chatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5957911B1DFA280B00094D11 /* swift3chatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift3chatUITests.swift; sourceTree = "<group>"; };
 		5957911D1DFA280B00094D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595791381DFA812200094D11 /* s3c.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s3c.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		595790FA1DFA280A00094D11 /* swift3chat */ = {
 			isa = PBXGroup;
 			children = (
+				595791381DFA812200094D11 /* s3c.podspec */,
 				595790FB1DFA280A00094D11 /* AppDelegate.swift */,
 				595790FD1DFA280A00094D11 /* s3c.swift */,
 				595790FF1DFA280A00094D11 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595791391DFA812200094D11 /* s3c.podspec in Resources */,
 				595791061DFA280A00094D11 /* LaunchScreen.storyboard in Resources */,
 				595791031DFA280A00094D11 /* Assets.xcassets in Resources */,
 				595791011DFA280A00094D11 /* Main.storyboard in Resources */,
@@ -514,6 +518,7 @@
 				595791221DFA280B00094D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		595791231DFA280B00094D11 /* Build configuration list for PBXNativeTarget "swift3chatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				595791251DFA280B00094D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		595791261DFA280B00094D11 /* Build configuration list for PBXNativeTarget "swift3chatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				595791281DFA280B00094D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
