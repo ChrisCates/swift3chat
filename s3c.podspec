@@ -13,6 +13,6 @@ s.author           = { 'Chris Cates' => 'hello@chriscates.ca' }
 s.source           = { :git => 'https://github.com/ChrisCates/Swift3Chat.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '10.0'
-s.source_files = '*.{swift,plist}'
+s.source_files = 'swift3chat/swift3chat/*.{swift,plist}'
 
 end
