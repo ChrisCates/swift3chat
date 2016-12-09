@@ -9,6 +9,18 @@ hello@chriscates.ca
 s3c acts as UIViewController that prebuilds a chat view for you.
 It works directly with a public struct called `s3c_struct`.
 
+## Installation
+
+In .podfile
+```
+pod "s3c"
+```
+
+Them run
+```
+pod install
+```
+
 ## Setup
 
 ```
