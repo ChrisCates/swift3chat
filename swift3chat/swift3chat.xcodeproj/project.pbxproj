@@ -14,7 +14,7 @@
 		595791061DFA280A00094D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595791041DFA280A00094D11 /* LaunchScreen.storyboard */; };
 		595791111DFA280A00094D11 /* swift3chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595791101DFA280A00094D11 /* swift3chatTests.swift */; };
 		5957911C1DFA280B00094D11 /* swift3chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957911B1DFA280B00094D11 /* swift3chatUITests.swift */; };
-		595791391DFA812200094D11 /* s3c.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 595791381DFA812200094D11 /* s3c.podspec */; };
+		5957913B1DFD2C8300094D11 /* s3c_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957913A1DFD2C8300094D11 /* s3c_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		595791171DFA280B00094D11 /* swift3chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift3chatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5957911B1DFA280B00094D11 /* swift3chatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift3chatUITests.swift; sourceTree = "<group>"; };
 		5957911D1DFA280B00094D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		595791381DFA812200094D11 /* s3c.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = s3c.podspec; sourceTree = "<group>"; };
+		5957913A1DFD2C8300094D11 /* s3c_test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = s3c_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 		595790FA1DFA280A00094D11 /* swift3chat */ = {
 			isa = PBXGroup;
 			children = (
-				595791381DFA812200094D11 /* s3c.podspec */,
 				595790FB1DFA280A00094D11 /* AppDelegate.swift */,
+				5957913A1DFD2C8300094D11 /* s3c_test.swift */,
 				595790FD1DFA280A00094D11 /* s3c.swift */,
 				595790FF1DFA280A00094D11 /* Main.storyboard */,
 				595791021DFA280A00094D11 /* Assets.xcassets */,
@@ -238,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595791391DFA812200094D11 /* s3c.podspec in Resources */,
 				595791061DFA280A00094D11 /* LaunchScreen.storyboard in Resources */,
 				595791031DFA280A00094D11 /* Assets.xcassets in Resources */,
 				595791011DFA280A00094D11 /* Main.storyboard in Resources */,
@@ -266,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5957913B1DFD2C8300094D11 /* s3c_test.swift in Sources */,
 				595790FE1DFA280A00094D11 /* s3c.swift in Sources */,
 				595790FC1DFA280A00094D11 /* AppDelegate.swift in Sources */,
 			);

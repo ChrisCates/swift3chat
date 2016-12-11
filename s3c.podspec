@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 's3c'
-s.version          = '0.1.0'
+s.version          = '0.2.0'
 s.summary          = 'Finally a Chat UI for Swift 3'
 
 s.description      = <<-DESC

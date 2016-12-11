@@ -12,10 +12,10 @@ public struct s3c_struct {
     static var offset: Int = 0
     static var fontSize: Int = 14
     static var photoSize: Int = 33
-    static var user1_name: String!
-    static var user1_photo: UIImage!
-    static var user2_name: String!
-    static var user2_photo: UIImage!
+    static var user1_name: String! = "Anonymous"
+    static var user1_photo: UIImage! = UIImage(named: "placeholder")
+    static var user2_name: String! = "Anonymous"
+    static var user2_photo: UIImage! = UIImage(named: "placeholder")
     static var messagesContainer: UITableView!
     static var messagesContainerDict: NSMutableDictionary!
     static var messages: Array<Dictionary<String, Any>> = Array()
@@ -94,22 +94,6 @@ class s3c: UIViewController, UITableViewDataSource, UITableViewDelegate {
             s3c_struct.button.setTitle((s3c_struct.buttonDict?["title"] as! String), for: .normal)
         }
         
-        if (s3c_struct.user1_name == nil) {
-           s3c_struct.user1_name = "Anonymous"
-        }
-        
-        if (s3c_struct.user2_name == nil) {
-            s3c_struct.user2_name = "Anonymous"
-        }
-        
-        if (s3c_struct.user1_photo == nil) {
-            s3c_struct.user1_photo = UIImage(named: "placeholder")
-        }
-        
-        if (s3c_struct.user2_photo == nil) {
-            s3c_struct.user2_photo = UIImage(named: "placeholder")
-        }
-        
         s3c_struct.user1_photo = s3c_struct.user1_photo.resizeImage(targetSize: CGSize(width: s3c_struct.photoSize, height: s3c_struct.photoSize))
         s3c_struct.user2_photo = s3c_struct.user2_photo.resizeImage(targetSize: CGSize(width: s3c_struct.photoSize, height: s3c_struct.photoSize))
         
@@ -159,24 +143,16 @@ class s3c: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         s3c_struct.input.text = ""
         
-        addMessage(text: text, from: from)
+        addMessage(text: text, from: from, photo: s3c_struct.user1_photo)
         
     }
     
-    public func addMessage(text: String, from: String) {
-        
-        var image: UIImage!
-        
-        if from == s3c_struct.user1_name {
-            image = s3c_struct.user1_photo
-        } else {
-            image = s3c_struct.user2_photo
-        }
+    public func addMessage(text: String, from: String, photo: UIImage) {
         
         let item: Dictionary = [
             "from": from,
             "message": text,
-            "image": image
+            "image": photo
         ] as [String : Any]
         
         print("Message is: " + text)
